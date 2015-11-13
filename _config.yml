@@ -4,7 +4,7 @@ email: WLJ0805@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml.
-baseurl: "/leasio" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://leasio.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
