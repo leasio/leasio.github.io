@@ -57,8 +57,8 @@
     var hours = new Date().getHours();
     var hoursSel = document.querySelector(".hours");
 
-    if (hours > 12) {
-      hours = hours - 12;
+    if (hours > 24) {
+      hours = hours - 24;
     }
 
     hours = ("0" + hours).slice(-2);
