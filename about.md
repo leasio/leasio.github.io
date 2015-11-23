@@ -11,5 +11,5 @@ permalink: /about/
 
 > [markdown语法](http://www.appinn.com/markdown/)
 
-*** 巨人肩膀
+### 巨人肩膀
 > [CSS 的优先级机制[总结]](http://www.cnblogs.com/xugang/archive/2010/09/24/1833760.html)
