@@ -249,7 +249,7 @@ code {
     padding-bottom: 1em;
     left: 0;
     right: 0;
-    margin: 20px 0px; }
+    margin: 20px auto; }
   .post-content ul {
     max-width: 540px;
     padding: 0 10px;
