@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Github for Windows安装问题小结</title>
+  <meta name="description" content="下载地址  下载地址windows安装没什么技术含量，一路双击确认即可。">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://leasio.github.io/jekyll/update/2015/11/17/20151117-02.html">
+  <link rel="alternate" type="application/rss+xml" title="Leasio" href="http://leasio.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Leasio</a>
+
+    <nav class="site-nav">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Github for Windows安装问题小结</h1>
+    <p class="post-meta">Nov 17, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <h3 id="section">下载地址</h3>
+<blockquote>
+  <p><a href="http://github-for-windows.en.softonic.com/">下载地址</a>
+windows安装没什么技术含量，一路双击确认即可。</p>
+</blockquote>
+
+<h3 id="section-1">遇到的异常</h3>
+<ul>
+  <li>1.安装过程遇到错误安装不了，错误信息：An error occurred trying to download ‘http://github-windows.s3.amazonaws.com/GitHub.application’.
+    <blockquote>
+      <p>习惯了用Firefox，直接打开这个地址结果下载了个没用的东西，这个应用地址需要用IE浏览器打开才有用，并且协议改成https：<a href="https://github-windows.s3.amazonaws.com/GitHub.application">https://github-windows.s3.amazonaws.com/GitHub.application</a>。</p>
+    </blockquote>
+  </li>
+  <li>2.安装后无法登陆
+    <blockquote>
+      <p>怎么登陆都提示失败，一开始以为密码记错了还修改了密码，结果还是失败，网上找了个解决方案：<a href="http://www.thinkphp.cn/topic/14038.html">教程</a>。
+解释起来还是配置问题，打开Git Shell填入email和name的信息如下（×××改自己的信息）：
+<code class="highlighter-rouge">git config --global user.email "×××@×××.com"</code>
+<code class="highlighter-rouge">git config --global user.name "×××"</code></p>
+    </blockquote>
+  </li>
+</ul>
+
+<h3 id="section-2">然后就能用了</h3>
+<blockquote>
+  <p>添加Clone把网上的项目导出来
+本地修改好commit一下就好了</p>
+</blockquote>
+
+
+  </article>
+
+</div>
+
+    </div>
+
+  </body>
+
+</html>

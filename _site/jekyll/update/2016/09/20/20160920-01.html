@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>2016年6月学习日报</title>
+  <meta name="description" content="6.1">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://leasio.github.io/jekyll/update/2016/09/20/20160920-01.html">
+  <link rel="alternate" type="application/rss+xml" title="Leasio" href="http://leasio.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Leasio</a>
+
+    <nav class="site-nav">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">2016年6月学习日报</h1>
+    <p class="post-meta">Sep 20, 2016</p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="section">6.1</h2>
+
+<h3 id="section-1">切图</h3>
+
+<ul>
+  <li>图片大小 &lt; 200k</li>
+</ul>
+
+<h2 id="section-2">6.2</h2>
+
+<blockquote>
+  <p>trigger() 方法</p>
+</blockquote>
+
+<p>触发被选元素的指定事件类型：$(selector).trigger(event,[param1,param2,…])</p>
+
+<h2 id="section-3">6.3</h2>
+
+<blockquote>
+  <p>text-indent文本缩进</p>
+</blockquote>
+
+<p>规定文本块中首行文本的缩进</p>
+
+<p>可配合texteare中加入repeat背景的方式使用～</p>
+
+<h2 id="section-4">6.6</h2>
+
+<h3 id="px-em-rem">px em rem</h3>
+
+<ul>
+  <li>px 象素，用户改变浏览器设置时将发生变化</li>
+  <li>em 相对于父元素的放大倍数（1em=16px），body选择器中声明font-size=62.5%（1em=10px）</li>
+  <li>rem 相对于根元素</li>
+</ul>
+
+<p>对于不支持rem的浏览器（IE9以下），同时设置px备用。</p>
+
+<h2 id="section-5">6.7</h2>
+
+<blockquote>
+  <p>siblings()方法</p>
+</blockquote>
+
+<p>匹配集合中每个元素的同胞元素：.siblings(selector)</p>
+
+<h2 id="section-6">6.8</h2>
+
+<h3 id="margin">margin负百分比兼容问题</h3>
+
+<p>定义：margin的百分比定义基于父对象总高度的百分比，然而对于没设置高度的relative元素，safari的高度与其他浏览器计算方法不同。尽量不要用这个属性。（用top之类）</p>
+
+<h2 id="section-7">6.12</h2>
+
+<h3 id="section-8">行内元素的默认间距</h3>
+
+<p>行内元素存在默认间距，设定时可用块级元素的float属性消除间隔</p>
+
+<h2 id="section-9">6.13</h2>
+
+<h3 id="jqueryextendjqueryfnextend">jQuery.extend和jQuery.fn.extend</h3>
+
+<p>jQuery.extend:扩展jQuery</p>
+
+<p>jQuery.fn.extend：扩展jQuery原型</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>a = $.extend({}, b,c);
+</code></pre>
+</div>
+
+<h2 id="section-10">6.14</h2>
+
+<h3 id="section-11">关于屏幕背景图显示区域</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>background:url(xxx) no-repeat center center;
+</code></pre>
+</div>
+
+<p>屏幕大小会影响显示区域，需父元素设定min-width保证显示范围</p>
+
+<h3 id="section-12">描边字</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>text-shadow: h-shadow v-shadow blur color;
+text-shadow: 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000, 1px 0 0 #000;
+</code></pre>
+</div>
+
+<p>思路：设置上下左右的阴影</p>
+
+<h2 id="section-13">6.15</h2>
+
+<h3 id="nth-childnth-of-type">:nth-child和:nth-of-type</h3>
+
+<p>:nth-child(n) 选择器匹配属于其父元素的第 N 个子元素，不论元素的类型</p>
+
+<p>:nth-of-type(n) 选择器匹配属于父元素的特定类型的第 N 个子元素的每个元素.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>关键词选择：
+:nth-child(odd)
+:nth-child(even)
+:nth-of-type(odd)
+:nth-of-type(even)
+</code></pre>
+</div>
+
+<p>IE8及更早不支持！！！</p>
+
+<h2 id="section-14">6.16</h2>
+
+<h3 id="ready">关于ready</h3>
+
+<p>ready在DOM元素加载完成后执行，不包含图片等资源。</p>
+
+<h2 id="section-15">6.17</h2>
+
+<h3 id="section-16">时间戳长度</h3>
+
+<p>时间戳有10位和13位，精确到秒和毫秒。</p>
+
+<h2 id="section-17">6.20-24</h2>
+
+<p>竟然没学习- -！</p>
+
+<h2 id="section-18">6.25-28</h2>
+
+<p>无</p>
+
+<h2 id="section-19">6.29</h2>
+
+<h1 id="placeholder">placeholder默认颜色修改</h1>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+input::-webkit-input-placeholder {color: #D6D0CA !important;}
+input:-moz-placeholder {color: #D6D0CA !important;}
+input::-moz-placeholder {color: #D6D0CA !important;}
+input:-ms-input-placeholder {color: #D6D0CA !important;}
+</code></pre>
+</div>
+
+<h2 id="section-20">6.30</h2>
+
+<h1 id="section-21">排除某个属性</h1>
+
+<p>jquery：not()</p>
+
+<h1 id="ie8nth-child">关于IE8的nth-child（）选择</h1>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/* standard nth */
+ul.menu li:nth-child(3)
+{
+    /* styles for the 3rd LI */
+}
+
+/* IE nth */
+ul.menu&gt;li + li + li 
+{
+    /* styles for the 3rd LI */
+}
+
+/* alternate, more specific IE nth */
+ul.menu&gt;li:first-child + li + li 
+{
+    /* styles for the 3rd LI */
+}
+</code></pre>
+</div>
+
+<p>(这个的效果是大于等于第三个- -)</p>
+
+<p>或者用jquery</p>
+
+  </article>
+
+</div>
+
+    </div>
+
+  </body>
+
+</html>
