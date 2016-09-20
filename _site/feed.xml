@@ -6,8 +6,8 @@
 </description>
     <link>http://leasio.github.io/</link>
     <atom:link href="http://leasio.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Sep 2016 17:12:34 +0800</pubDate>
-    <lastBuildDate>Tue, 20 Sep 2016 17:12:34 +0800</lastBuildDate>
+    <pubDate>Tue, 20 Sep 2016 17:13:20 +0800</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2016 17:13:20 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -252,7 +252,7 @@ text-shadow: 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000, 1px 0 0 #000;
 
 &lt;h2 id=&quot;section-19&quot;&gt;6.29&lt;/h2&gt;
 
-&lt;h1 id=&quot;placeholder&quot;&gt;placeholder默认颜色修改&lt;/h1&gt;
+&lt;h3 id=&quot;placeholder&quot;&gt;placeholder默认颜色修改&lt;/h3&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 input::-webkit-input-placeholder {color: #D6D0CA !important;}
